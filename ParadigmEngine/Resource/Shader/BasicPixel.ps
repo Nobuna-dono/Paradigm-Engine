@@ -1,0 +1,19 @@
+////////////////////////////////////////
+// Pixel shader HLSL 5
+//_______________________________
+// * Basic pixel shader to paint texture from uv.
+
+SamplerState SampleType;
+Texture2D Albedo;
+
+struct PixelInput
+{
+    	float4 position : SV_POSITION;
+    	float3 normal : NORMAL;	
+	float2 uv : TEXCOORD0;
+};
+
+float4 PixelToFrameBuffer(PixelInput input) : SV_TARGET
+{
+	return Albedo.Sample(SampleType, input.uv);// * float4(1,0,0,1);	
+}

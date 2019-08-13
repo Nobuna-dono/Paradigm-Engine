@@ -1,0 +1,15 @@
+////////////////////////////////////////
+// Pixel shader HLSL 5
+//_______________________________
+// * Basic pixel shader to paint texture from uv.
+
+struct PixelInput
+{
+    	float4 position : SV_POSITION;
+		//float3 normal : NORMAL;			
+};
+
+float4 PixelToFrameBuffer(PixelInput input) : SV_TARGET
+{
+	return float4(0,0,0,1);//(1.0, 0.718, 0.071, 1.0);	 
+}

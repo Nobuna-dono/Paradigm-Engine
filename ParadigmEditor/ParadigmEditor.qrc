@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/ParadigmEditor"/>
+    <qresource prefix="/ParadigmEngine">
+        <file alias="Aldrich-Regular">Resource/Aldrich-Regular.ttf</file>
+    </qresource>
+</RCC>

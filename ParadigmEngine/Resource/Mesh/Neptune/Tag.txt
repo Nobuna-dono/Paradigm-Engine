@@ -1,0 +1,6 @@
+Game: Hyperdimension Neptunia Mk2
+Subject: Neptune (Nep-Claus)
+Copyright: Idea Factory, Compile Heart
+Model Ripper: Random Talking Bush
+Hosting Permissions: The Models Resource
+Notes: Special thanks to howfie for the model importing script.

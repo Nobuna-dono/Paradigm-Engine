@@ -1,0 +1,35 @@
+[May 31 2018] : 16:03:38 : [WARNING] - error X3501: 'Main': entrypoint not found
+[May 31 2018] : 16:03:38 : [WARNING] - error X3501: 'Main': entrypoint not found
+[Jun  4 2018] : 10:57:27 : [WARNING] - C:\Users\l.benard\Project\X-Paradigm\ParadigmEngine\Resource\Shader\DebugNormals.gs(28,5): error X3018: invalid subscript 'uv'
+[Jun  4 2018] : 10:57:27 : [WARNING] - C:\Users\l.benard\Project\X-Paradigm\ParadigmEngine\Resource\Shader\DebugNormals.gs(28,5): error X3018: invalid subscript 'uv'
+[Jun  4 2018] : 10:57:27 : [WARNING] - C:\Users\l.benard\Project\X-Paradigm\ParadigmEngine\Resource\Shader\DebugNormals.gs(28,5): error X3018: invalid subscript 'uv'
+[Jun  9 2018] : 20:32:30 : [WARNING] - N:\ISART\GP_2020_Paradigm Engine\GameEngine_09\ParadigmEngine\Resource\Shader\BasicPixel.ps(18,41): error X3018: invalid subscript 'u'
+N:\ISART\GP_2020_Paradigm Engine\GameEngine_09\ParadigmEngine\Resource\Shader\BasicPixel.ps(18,16): error X3013: 'Sample': intrinsic method does not take 2 parameters
+N:\ISART\GP_2020_Paradigm Engine\GameEngine_09\ParadigmEngine\Resource\Shader\BasicPixel.ps(18,16): error X3013: Possible intrinsic methods are:
+N:\ISART\GP_2020_Paradigm Engine\GameEngine_09\ParadigmEngine\Resource\Shader\BasicPixel.ps(18,16): error X3013:     Texture2D.Sample(SamplerState, float2)
+N:\ISART\GP_2020_Paradigm Engine\GameEngine_09\ParadigmEngine\Resource\Shader\BasicPixel.ps(18,16): error X3013:     Texture2D.Sample(SamplerState, float2, int2)
+[Jun  9 2018] : 20:32:30 : [WARNING] - N:\ISART\GP_2020_Paradigm Engine\GameEngine_09\ParadigmEngine\Resource\Shader\BasicPixel.ps(18,41): error X3018: invalid subscript 'u'
+N:\ISART\GP_2020_Paradigm Engine\GameEngine_09\ParadigmEngine\Resource\Shader\BasicPixel.ps(18,16): error X3013: 'Sample': intrinsic method does not take 2 parameters
+N:\ISART\GP_2020_Paradigm Engine\GameEngine_09\ParadigmEngine\Resource\Shader\BasicPixel.ps(18,16): error X3013: Possible intrinsic methods are:
+N:\ISART\GP_2020_Paradigm Engine\GameEngine_09\ParadigmEngine\Resource\Shader\BasicPixel.ps(18,16): error X3013:     Texture2D.Sample(SamplerState, float2)
+N:\ISART\GP_2020_Paradigm Engine\GameEngine_09\ParadigmEngine\Resource\Shader\BasicPixel.ps(18,16): error X3013:     Texture2D.Sample(SamplerState, float2, int2)
+[Jun  9 2018] : 20:32:30 : [WARNING] - N:\ISART\GP_2020_Paradigm Engine\GameEngine_09\ParadigmEngine\Resource\Shader\BasicPixel.ps(18,47): error X3014: incorrect number of arguments to numeric-type constructor
+[Jun  9 2018] : 20:32:30 : [WARNING] - N:\ISART\GP_2020_Paradigm Engine\GameEngine_09\ParadigmEngine\Resource\Shader\BasicPixel.ps(18,41): error X3018: invalid subscript 'u'
+N:\ISART\GP_2020_Paradigm Engine\GameEngine_09\ParadigmEngine\Resource\Shader\BasicPixel.ps(18,16): error X3013: 'Sample': intrinsic method does not take 2 parameters
+N:\ISART\GP_2020_Paradigm Engine\GameEngine_09\ParadigmEngine\Resource\Shader\BasicPixel.ps(18,16): error X3013: Possible intrinsic methods are:
+N:\ISART\GP_2020_Paradigm Engine\GameEngine_09\ParadigmEngine\Resource\Shader\BasicPixel.ps(18,16): error X3013:     Texture2D.Sample(SamplerState, float2)
+N:\ISART\GP_2020_Paradigm Engine\GameEngine_09\ParadigmEngine\Resource\Shader\BasicPixel.ps(18,16): error X3013:     Texture2D.Sample(SamplerState, float2, int2)
+[Jun  9 2018] : 20:32:30 : [WARNING] - N:\ISART\GP_2020_Paradigm Engine\GameEngine_09\ParadigmEngine\Resource\Shader\BasicPixel.ps(18,41): error X3018: invalid subscript 'u'
+N:\ISART\GP_2020_Paradigm Engine\GameEngine_09\ParadigmEngine\Resource\Shader\BasicPixel.ps(18,16): error X3013: 'Sample': intrinsic method does not take 2 parameters
+N:\ISART\GP_2020_Paradigm Engine\GameEngine_09\ParadigmEngine\Resource\Shader\BasicPixel.ps(18,16): error X3013: Possible intrinsic methods are:
+N:\ISART\GP_2020_Paradigm Engine\GameEngine_09\ParadigmEngine\Resource\Shader\BasicPixel.ps(18,16): error X3013:     Texture2D.Sample(SamplerState, float2)
+N:\ISART\GP_2020_Paradigm Engine\GameEngine_09\ParadigmEngine\Resource\Shader\BasicPixel.ps(18,16): error X3013:     Texture2D.Sample(SamplerState, float2, int2)
+[Jun  9 2018] : 20:32:30 : [WARNING] - N:\ISART\GP_2020_Paradigm Engine\GameEngine_09\ParadigmEngine\Resource\Shader\BasicPixel.ps(18,41): error X3018: invalid subscript 'u'
+N:\ISART\GP_2020_Paradigm Engine\GameEngine_09\ParadigmEngine\Resource\Shader\BasicPixel.ps(18,16): error X3013: 'Sample': intrinsic method does not take 2 parameters
+N:\ISART\GP_2020_Paradigm Engine\GameEngine_09\ParadigmEngine\Resource\Shader\BasicPixel.ps(18,16): error X3013: Possible intrinsic methods are:
+N:\ISART\GP_2020_Paradigm Engine\GameEngine_09\ParadigmEngine\Resource\Shader\BasicPixel.ps(18,16): error X3013:     Texture2D.Sample(SamplerState, float2)
+N:\ISART\GP_2020_Paradigm Engine\GameEngine_09\ParadigmEngine\Resource\Shader\BasicPixel.ps(18,16): error X3013:     Texture2D.Sample(SamplerState, float2, int2)
+[Jun  9 2018] : 21:44:08 : [WARNING] - N:\ISART\GP_2020_Paradigm Engine\GameEngine_09\ParadigmEngine\Resource\Shader\BasicPixel.ps(18,45): error X3000: syntax error: unexpected token '/'
+[Jun  9 2018] : 21:44:08 : [WARNING] - N:\ISART\GP_2020_Paradigm Engine\GameEngine_09\ParadigmEngine\Resource\Shader\BasicPixel.ps(18,46): error X3000: syntax error: unexpected token '/'
+[Jun  9 2018] : 21:44:08 : [WARNING] - N:\ISART\GP_2020_Paradigm Engine\GameEngine_09\ParadigmEngine\Resource\Shader\BasicPixel.ps(18,46): error X3000: syntax error: unexpected token '/'
+[Jun  9 2018] : 21:44:08 : [WARNING] - N:\ISART\GP_2020_Paradigm Engine\GameEngine_09\ParadigmEngine\Resource\Shader\BasicPixel.ps(18,46): error X3000: syntax error: unexpected token '/'

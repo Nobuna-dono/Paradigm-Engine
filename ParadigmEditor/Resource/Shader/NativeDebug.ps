@@ -1,0 +1,13 @@
+////////////////////////////////////////
+// Pixel shader HLSL 5
+//_______________________________
+// Debug magenta
+struct PixelInput
+{
+    float4 position : SV_POSITION;		
+};
+
+float4 PixelToFrameBuffer(PixelInput input) : SV_TARGET
+{
+	return float4(1,0,1,1);	
+}

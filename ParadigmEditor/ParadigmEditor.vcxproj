@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B12702AD-ABFB-343A-A199-8E24837244A3}</ProjectGuid>
+    <Keyword>Qt4VSv1.0</Keyword>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">
+    <QtMsBuild>$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>_PARADIGM_EDITOR;_x64;UNICODE;_UNICODE;WIN32;WIN64;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\ParadigmEngine/Extern/Include/pyBulletEngine;C:\Program Files\Autodesk\FBX\FBX SDK\2018.1.1\include;..\ParadigmEngine/Extern/Include/DirectX;..\ParadigmEngine/Extern/Include/DirectXTK;.\GeneratedFiles;.;.\GeneratedFiles\$(ConfigurationName);Extern/Include;..\ParadigmEngine/Include\Core\DataStructure;..\ParadigmEngine/Include\Core\Debug;../ParadigmEngine/Include\Core;../ParadigmEngine/Include\Core\Utility;../ParadigmEngine/Include\Shortcut;../ParadigmEngine/Extern/;../ParadigmEngine/Include;..\ParadigmEngine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;Extern/Lib/x64;../ParadigmEngine/Bin/x64/DebugLib;../ParadigmEngine/Extern/Lib/$(Platform)/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>qtmaind.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5Widgetsd.lib;ParadigmEngine_devbuild.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <QtMoc>
+      <OutputFile>.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</OutputFile>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <IncludePath>..\ParadigmEngine/Extern/Include/pyBulletEngine;C:\Program Files\Autodesk\FBX\FBX SDK\2018.1.1\include;..\ParadigmEngine/Extern/Include/DirectX;..\ParadigmEngine/Extern/Include/DirectXTK;.\GeneratedFiles;.;.\GeneratedFiles\$(ConfigurationName);Extern/Include;..\ParadigmEngine/Include\Core\DataStructure;..\ParadigmEngine/Include\Core\Debug;../ParadigmEngine/Include\Core;../ParadigmEngine/Include\Core\Utility;../ParadigmEngine/Include\Shortcut;../ParadigmEngine/Extern/;../ParadigmEngine/Include;..\ParadigmEngine;%(AdditionalIncludeDirectories)</IncludePath>
+      <Define>_PARADIGM_EDITOR;_x64;UNICODE;_UNICODE;WIN32;WIN64;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;%(PreprocessorDefinitions)</Define>
+    </QtMoc>
+    <QtUic>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <OutputFile>.\GeneratedFiles\ui_%(Filename).h</OutputFile>
+    </QtUic>
+    <QtRcc>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <OutputFile>.\GeneratedFiles\qrc_%(Filename).cpp</OutputFile>
+    </QtRcc>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>_x64;UNICODE;_UNICODE;WIN32;WIN64;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\ParadigmEngine/Extern/Include/pyBulletEngine;C:\Program Files\Autodesk\FBX\FBX SDK\2018.1.1\include;..\ParadigmEngine/Extern/Include/DirectX;..\ParadigmEngine/Extern/Include/DirectXTK;.\GeneratedFiles;.;.\GeneratedFiles\$(ConfigurationName);Extern/Include;..\ParadigmEngine/Include\Core\DataStructure;..\ParadigmEngine/Include\Core\Debug;../ParadigmEngine/Include\Core;../ParadigmEngine/Include\Core\Utility;../ParadigmEngine/Include\Shortcut;../ParadigmEngine/Extern/;../ParadigmEngine/Include;..\ParadigmEngine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat />
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;Extern/Lib/x64;../ParadigmEngine/Bin/x64/ReleaseLib;../ParadigmEngine/Extern/Lib/$(Platform)/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>qtmain.lib;Qt5Core.lib;Qt5Gui.lib;Qt5Widgets.lib;ParadigmEngine.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <QtMoc>
+      <OutputFile>.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</OutputFile>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <IncludePath>..\ParadigmEngine/Extern/Include/pyBulletEngine;C:\Program Files\Autodesk\FBX\FBX SDK\2018.1.1\include;..\ParadigmEngine/Extern/Include/DirectX;..\ParadigmEngine/Extern/Include/DirectXTK;.\GeneratedFiles;.;.\GeneratedFiles\$(ConfigurationName);Extern/Include;..\ParadigmEngine/Include\Core\DataStructure;..\ParadigmEngine/Include\Core\Debug;../ParadigmEngine/Include\Core;../ParadigmEngine/Include\Core\Utility;../ParadigmEngine/Include\Shortcut;../ParadigmEngine/Extern/;../ParadigmEngine/Include;..\ParadigmEngine;%(AdditionalIncludeDirectories)</IncludePath>
+      <Define>_PARADIGM_EDITOR;_x64;UNICODE;_UNICODE;WIN32;WIN64;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB;%(PreprocessorDefinitions)</Define>
+    </QtMoc>
+    <QtUic>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <OutputFile>.\GeneratedFiles\ui_%(Filename).h</OutputFile>
+    </QtUic>
+    <QtRcc>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <OutputFile>.\GeneratedFiles\qrc_%(Filename).cpp</OutputFile>
+    </QtRcc>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\FCustomWidget.cpp" />
+    <ClCompile Include="Source\FEditorTools.cpp" />
+    <ClCompile Include="Source\FInitialization.cpp" />
+    <ClCompile Include="Source\FInspector.cpp" />
+    <ClCompile Include="Source\FInspectorManager.cpp" />
+    <ClCompile Include="Source\FLog.cpp" />
+    <ClCompile Include="Source\FMenuBar.cpp" />
+    <ClCompile Include="Source\FPlayMode.cpp" />
+    <ClCompile Include="Source\FProfiler.cpp" />
+    <ClCompile Include="Source\FProject.cpp" />
+    <ClCompile Include="Source\FResources.cpp" />
+    <ClCompile Include="Source\FScene.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="ParadigmEditor.cpp" />
+    <ClCompile Include="Source\Hierarchy\UCustomTreeItem.cpp" />
+    <ClCompile Include="Source\Hierarchy\UHierarchyWidget.cpp" />
+    <ClCompile Include="Source\InspectorField\UArrayField.cpp" />
+    <ClCompile Include="Source\InspectorField\UBooleanField.cpp" />
+    <ClCompile Include="Source\InspectorField\UEnumField.cpp" />
+    <ClCompile Include="Source\InspectorField\UInspectorWidget.cpp" />
+    <ClCompile Include="Source\InspectorField\UNumberField.cpp" />
+    <ClCompile Include="Source\InspectorField\UGearWidget.cpp" />
+    <ClCompile Include="Source\InspectorField\UStringField.cpp" />
+    <ClCompile Include="Source\InspectorField\UVariableField.cpp" />
+    <ClCompile Include="Source\InspectorField\UVectorField.cpp" />
+    <ClCompile Include="Source\Scene\CameraMoves.cpp" />
+    <ClCompile Include="Source\Scene\FContext.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="Include\ParadigmEditor.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="ParadigmEditor.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="ParadigmEditor.qrc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\HierarchyTree\CustomTreeItem.h" />
+    <ClInclude Include="Include\HierarchyTree\UHierarchyWidget.h" />
+    <ClInclude Include="Include\InspectorField\InspectorIncludes.h" />
+    <ClInclude Include="Include\InspectorField\UArrayField.h" />
+    <ClInclude Include="Include\InspectorField\UBooleanField.h" />
+    <ClInclude Include="Include\InspectorField\UEnumField.h" />
+    <ClInclude Include="Include\InspectorField\UInspectorWidget.h" />
+    <QtMoc Include="Include\InspectorField\UNumberField.h">
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\..\ParadigmEngine\Extern\Include\pyBulletEngine;C:\Program Files\Autodesk\FBX\FBX SDK\2018.1.1\include;.\..\ParadigmEngine\Extern\Include\DirectX;.\..\ParadigmEngine\Extern\Include\DirectXTK;.\GeneratedFiles;.;.\GeneratedFiles\$(ConfigurationName)\.;.\Extern\Include;.\..\ParadigmEngine\Include\Core\DataStructure;.\..\ParadigmEngine\Include\Core\Debug;.\..\ParadigmEngine\Include\Core;.\..\ParadigmEngine\Include\Core\Utility;.\..\ParadigmEngine\Include\Shortcut;.\..\ParadigmEngine\Extern;.\..\ParadigmEngine\Include;.\..\ParadigmEngine</IncludePath>
+      <Define Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">_PARADIGM_EDITOR;_x64;UNICODE;_UNICODE;WIN32;WIN64;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB</Define>
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName)\.;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets;$(SolutionDir)\ParadigmEngine\Include</IncludePath>
+      <Define Condition="'$(Configuration)|$(Platform)'=='Release|x64'">_x64;UNICODE;_UNICODE;WIN32;WIN64;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB</Define>
+    </QtMoc>
+    <ClInclude Include="Include\InspectorField\UGearWidget.h" />
+    <ClInclude Include="Include\InspectorField\UStringField.h" />
+    <QtMoc Include="Include\InspectorField\UVariableField.h">
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\..\ParadigmEngine\Extern\Include\pyBulletEngine;C:\Program Files\Autodesk\FBX\FBX SDK\2018.1.1\include;.\..\ParadigmEngine\Extern\Include\DirectX;.\..\ParadigmEngine\Extern\Include\DirectXTK;.\GeneratedFiles;.;.\GeneratedFiles\$(ConfigurationName)\.;.\Extern\Include;.\..\ParadigmEngine\Include\Core\DataStructure;.\..\ParadigmEngine\Include\Core\Debug;.\..\ParadigmEngine\Include\Core;.\..\ParadigmEngine\Include\Core\Utility;.\..\ParadigmEngine\Include\Shortcut;.\..\ParadigmEngine\Extern;.\..\ParadigmEngine\Include;.\..\ParadigmEngine</IncludePath>
+      <Define Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">_PARADIGM_EDITOR;_x64;UNICODE;_UNICODE;WIN32;WIN64;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB</Define>
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName)\.;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets;$(SolutionDir)\ParadigmEngine\Include</IncludePath>
+      <Define Condition="'$(Configuration)|$(Platform)'=='Release|x64'">_x64;UNICODE;_UNICODE;WIN32;WIN64;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB</Define>
+    </QtMoc>
+    <QtMoc Include="Include\InspectorField\UVectorField.h">
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\..\ParadigmEngine\Extern\Include\pyBulletEngine;C:\Program Files\Autodesk\FBX\FBX SDK\2018.1.1\include;.\..\ParadigmEngine\Extern\Include\DirectX;.\..\ParadigmEngine\Extern\Include\DirectXTK;.\GeneratedFiles;.;.\GeneratedFiles\$(ConfigurationName)\.;.\Extern\Include;.\..\ParadigmEngine\Include\Core\DataStructure;.\..\ParadigmEngine\Include\Core\Debug;.\..\ParadigmEngine\Include\Core;.\..\ParadigmEngine\Include\Core\Utility;.\..\ParadigmEngine\Include\Shortcut;.\..\ParadigmEngine\Extern;.\..\ParadigmEngine\Include;.\..\ParadigmEngine</IncludePath>
+      <Define Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">_PARADIGM_EDITOR;_x64;UNICODE;_UNICODE;WIN32;WIN64;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB</Define>
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName)\.;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets;$(SolutionDir)\ParadigmEngine\Include</IncludePath>
+      <Define Condition="'$(Configuration)|$(Platform)'=='Release|x64'">_x64;UNICODE;_UNICODE;WIN32;WIN64;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB</Define>
+    </QtMoc>
+    <ClInclude Include="Include\QtIncludes.h" />
+    <ClInclude Include="Include\Scene\CameraMoves.h" />
+    <QtMoc Include="Include\Scene\FContext.h">
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\..\ParadigmEngine\Extern\Include\pyBulletEngine;C:\Program Files\Autodesk\FBX\FBX SDK\2018.1.1\include;.\..\ParadigmEngine\Extern\Include\DirectX;.\..\ParadigmEngine\Extern\Include\DirectXTK;.\GeneratedFiles;.;.\GeneratedFiles\$(ConfigurationName)\.;.\Extern\Include;.\..\ParadigmEngine\Include\Core\DataStructure;.\..\ParadigmEngine\Include\Core\Debug;.\..\ParadigmEngine\Include\Core;.\..\ParadigmEngine\Include\Core\Utility;.\..\ParadigmEngine\Include\Shortcut;.\..\ParadigmEngine\Extern;.\..\ParadigmEngine\Include;.\..\ParadigmEngine</IncludePath>
+      <Define Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">UNICODE;_UNICODE;WIN32;WIN64;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB</Define>
+      <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName)\.;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWidgets;$(SolutionDir)\ParadigmEngine\Include</IncludePath>
+      <Define Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UNICODE;_UNICODE;WIN32;WIN64;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB</Define>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ParadigmEngine\ParadigmEngine.vcxproj">
+      <Project>{4e1124a6-56dc-4c73-be81-946902c7360c}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Include\InspectorField\UInspectorWidget.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties MocDir=".\GeneratedFiles\$(ConfigurationName)" UicDir=".\GeneratedFiles" RccDir=".\GeneratedFiles" lupdateOptions="" lupdateOnBuild="0" lreleaseOptions="" Qt5Version_x0020_x64="msvc2017_64" MocOptions="" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

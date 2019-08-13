@@ -1,0 +1,663 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugLib|Win32">
+      <Configuration>DebugLib</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugLib|x64">
+      <Configuration>DebugLib</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseLib|Win32">
+      <Configuration>ReleaseLib</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseLib|x64">
+      <Configuration>ReleaseLib</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{4E1124A6-56DC-4C73-BE81-946902C7360C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ParadigmEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugLib|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseLib|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugLib|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseLib|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugLib|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseLib|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugLib|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseLib|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(ProjectDir);$(ProjectDir)Include;$(ProjectDir)Include/Core;$(ProjectDir)Include/Core/Utility;$(ProjectDir)Include/Core/Debug;$(ProjectDir)Include/Core/DataStructure;$(ProjectDir)Include/Shortcut/;$(ProjectDir)Extern/Include;$(MSBuildToolsPath);$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
+    <ExecutablePath>$(MSBuildToolsPath);$(VC_ExecutablePath_x86);$(WindowsSDK_ExecutablePath);$(VS_ExecutablePath);$(MSBuild_ExecutablePath);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH)</ExecutablePath>
+    <LibraryPath>$(ProjectDir)Extern/Lib/x86/Debug;$(LibraryPath);$(MSBuildToolsPath);$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86</LibraryPath>
+    <TargetExt>.exe</TargetExt>
+    <SourcePath>$(VC_SourcePath);$(SourcePath);Source;</SourcePath>
+    <TargetName>$(ProjectName)_DevBuild</TargetName>
+    <OutDir>$(ProjectDir)Bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)Bin\ParadigmEngine.dir\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugLib|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(ProjectDir);$(ProjectDir)Include;$(ProjectDir)Include/Core;$(ProjectDir)Include/Core/Utility;$(ProjectDir)Include/Core/Debug;$(ProjectDir)Include/Core/DataStructure;$(ProjectDir)Include/Shortcut/;$(ProjectDir)Extern/Include;$(MSBuildToolsPath);$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
+    <ExecutablePath>$(MSBuildToolsPath);$(VC_ExecutablePath_x86);$(WindowsSDK_ExecutablePath);$(VS_ExecutablePath);$(MSBuild_ExecutablePath);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH)</ExecutablePath>
+    <LibraryPath>$(ProjectDir)Extern/Lib/x86/Debug;$(LibraryPath);$(MSBuildToolsPath);$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86</LibraryPath>
+    <TargetExt>.lib</TargetExt>
+    <SourcePath>$(VC_SourcePath);$(SourcePath);Source;</SourcePath>
+    <TargetName>$(ProjectName)_DevBuild</TargetName>
+    <OutDir>$(ProjectDir)Bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)Bin\ParadigmEngine.dir\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(ProjectDir);$(ProjectDir)Include;$(ProjectDir)Include/Core;$(ProjectDir)Include/Core/Utility;$(ProjectDir)Include/Core/Debug;$(ProjectDir)Include/Core/DataStructure;$(ProjectDir)Include/Shortcut/;$(ProjectDir)Extern/Include;$(MSBuildToolsPath);$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
+    <LibraryPath>$(WindowsSDK_LibraryPath_x64);$(DXSDK_DIR)Lib\x64;$(VC_LibraryPath_x64);$(LibraryPath);$(MSBuildToolsPath);$(NETFXKitsDir)Lib/um/x64;$(ProjectDir)Extern/Lib/x64/Debug</LibraryPath>
+    <SourcePath>$(VC_SourcePath);$(SourcePath);Source;</SourcePath>
+    <TargetName>$(ProjectName)_DevBuild</TargetName>
+    <OutDir>$(ProjectDir)Bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)Bin\ParadigmEngine.dir\$(Platform)\$(Configuration)\</IntDir>
+    <ExecutablePath>$(MSBuildToolsPath);$(VC_ExecutablePath_x64);$(WindowsSDK_ExecutablePath);$(VS_ExecutablePath);$(MSBuild_ExecutablePath);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH)</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugLib|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(DXSDK_DIR)Include;$(ProjectDir);$(ProjectDir)Include;$(ProjectDir)Include/Core;$(ProjectDir)Include/Core/Utility;$(ProjectDir)Include/Core/Debug;$(ProjectDir)Include/Core/DataStructure;$(ProjectDir)Include/Shortcut/;$(ProjectDir)Extern/Include;$(MSBuildToolsPath);$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
+    <LibraryPath>$(WindowsSDK_LibraryPath_x64);$(DXSDK_DIR)Lib\x64;$(VC_LibraryPath_x64);$(LibraryPath);$(MSBuildToolsPath);$(NETFXKitsDir)Lib/um/x64;$(ProjectDir)Extern/Lib/x64/Release;</LibraryPath>
+    <SourcePath>$(VC_SourcePath);$(SourcePath);Source;</SourcePath>
+    <TargetName>$(ProjectName)_DevBuild</TargetName>
+    <OutDir>$(ProjectDir)Bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)Bin\ParadigmEngine.dir\$(Platform)\$(Configuration)\</IntDir>
+    <ExecutablePath>$(VC_ExecutablePath_x64);$(VS_ExecutablePath);$(WindowsSDK_ExecutablePath);$(DXSDK_DIR)Utilities\bin\x64;$(DXSDK_DIR)Utilities\bin\x86;$(MSBuildToolsPath);$(MSBuild_ExecutablePath);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);</ExecutablePath>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(DXSDK_DIR)Include;$(ProjectDir);$(ProjectDir)Include;$(ProjectDir)Include/Core;$(ProjectDir)Include/Core/Utility;$(ProjectDir)Include/Core/Debug;$(ProjectDir)Include/Core/DataStructure;$(ProjectDir)Include/Shortcut/;$(ProjectDir)Extern/Include;$(MSBuildToolsPath);$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
+    <TargetExt>.exe</TargetExt>
+    <ExecutablePath>$(VC_ExecutablePath_x86);$(VS_ExecutablePath);$(WindowsSDK_ExecutablePath);$(DXSDK_DIR)Utilities\bin\x86;$(MSBuildToolsPath);$(MSBuild_ExecutablePath);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);</ExecutablePath>
+    <LibraryPath>$(WindowsSDK_LibraryPath_x86);$(DXSDK_DIR)Lib\x86;$(VC_LibraryPath_x86);$(LibraryPath);$(MSBuildToolsPath);$(NETFXKitsDir)Lib\um\x86;$(ProjectDir)Extern/Lib/x86/Release;</LibraryPath>
+    <SourcePath>$(VC_SourcePath);$(SourcePath);Source;</SourcePath>
+    <TargetName>$(ProjectName)</TargetName>
+    <OutDir>$(ProjectDir)Bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)Bin\ParadigmEngine.dir\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseLib|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(DXSDK_DIR)Include;$(ProjectDir);$(ProjectDir)Include;$(ProjectDir)Include/Core;$(ProjectDir)Include/Core/Utility;$(ProjectDir)Include/Core/Debug;$(ProjectDir)Include/Core/DataStructure;$(ProjectDir)Include/Shortcut/;$(ProjectDir)Extern/Include;$(MSBuildToolsPath);$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
+    <TargetExt>.lib</TargetExt>
+    <ExecutablePath>$(VC_ExecutablePath_x86);$(VS_ExecutablePath);$(WindowsSDK_ExecutablePath);$(DXSDK_DIR)Utilities\bin\x86;$(MSBuildToolsPath);$(MSBuild_ExecutablePath);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);</ExecutablePath>
+    <LibraryPath>$(WindowsSDK_LibraryPath_x86);$(DXSDK_DIR)Lib\x86;$(VC_LibraryPath_x86);$(LibraryPath);$(MSBuildToolsPath);$(NETFXKitsDir)Lib\um\x86;$(ProjectDir)Extern/Lib/x86/Release;</LibraryPath>
+    <SourcePath>$(VC_SourcePath);$(SourcePath);Source;</SourcePath>
+    <TargetName>$(ProjectName)</TargetName>
+    <OutDir>$(ProjectDir)Bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)Bin\ParadigmEngine.dir\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(ProjectDir);$(ProjectDir)Include;$(ProjectDir)Include/Core;$(ProjectDir)Include/Core/Utility;$(ProjectDir)Include/Core/Debug;$(ProjectDir)Include/Core/DataStructure;$(ProjectDir)Include/Shortcut/;$(ProjectDir)Extern/Include;$(MSBuildToolsPath);$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
+    <TargetExt>.exe</TargetExt>
+    <SourcePath>$(VC_SourcePath);$(SourcePath);Source;</SourcePath>
+    <LibraryPath>$(WindowsSDK_LibraryPath_x64);$(DXSDK_DIR)Lib\x64;$(VC_LibraryPath_x64);$(LibraryPath);$(MSBuildToolsPath);$(NETFXKitsDir)Lib/um/x64;$(ProjectDir)Extern/Lib/x64/Release;</LibraryPath>
+    <TargetName>$(ProjectName)</TargetName>
+    <OutDir>$(ProjectDir)Bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)Bin\ParadigmEngine.dir\$(Platform)\$(Configuration)\</IntDir>
+    <ExecutablePath>$(VC_ExecutablePath_x64);$(VS_ExecutablePath);$(WindowsSDK_ExecutablePath);$(DXSDK_DIR)Utilities\bin\x64;$(DXSDK_DIR)Utilities\bin\x86;$(MSBuildToolsPath);$(MSBuild_ExecutablePath);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseLib|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(DXSDK_DIR)Include;$(ProjectDir);$(ProjectDir)Include;$(ProjectDir)Include/Core;$(ProjectDir)Include/Core/Utility;$(ProjectDir)Include/Core/Debug;$(ProjectDir)Include/Core/DataStructure;$(ProjectDir)Include/Shortcut/;$(ProjectDir)Extern/Include;$(MSBuildToolsPath);$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
+    <TargetExt>.lib</TargetExt>
+    <SourcePath>$(VC_SourcePath);$(SourcePath);Source;</SourcePath>
+    <LibraryPath>$(WindowsSDK_LibraryPath_x64);$(DXSDK_DIR)Lib\x64;$(VC_LibraryPath_x64);$(LibraryPath);$(MSBuildToolsPath);$(NETFXKitsDir)Lib/um/x64;$(ProjectDir)Extern/Lib/x64/Release;</LibraryPath>
+    <TargetName>$(ProjectName)</TargetName>
+    <OutDir>$(ProjectDir)Bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)Bin\ParadigmEngine.dir\$(Platform)\$(Configuration)\</IntDir>
+    <ExecutablePath>$(VC_ExecutablePath_x64);$(VS_ExecutablePath);$(WindowsSDK_ExecutablePath);$(DXSDK_DIR)Utilities\bin\x64;$(DXSDK_DIR)Utilities\bin\x86;$(MSBuildToolsPath);$(MSBuild_ExecutablePath);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);</ExecutablePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_x86;_MBCS;_DEBUG;_CONSOLE;PARADIGM_DEBUG;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir);Extern/Include/pyBulletEngine;C:\Program Files\Autodesk\FBX\FBX SDK\2018.1.1\include;Extern/Include/assimp;Extern/Include/GLFW;Extern/Include/GLEW;Extern/Include/DirectXTK;Extern/Include/DirectX</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>NotSet</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>assimp.lib;dxgi.lib;d3d11.lib;d3dx11.lib;d3dx10.lib;DirectXTK.lib;d3dcompiler.lib;dinput8.lib;dxguid.lib;winmm.lib;pdh.lib;glfw3.lib;opengl32.lib;glew32.lib;glew32s.lib;BulletDynamics.lib;BulletCollision.lib;LinearMath.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>Extern/Lib/x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <PreventDllBinding>
+      </PreventDllBinding>
+      <DelayLoadDLLs>
+      </DelayLoadDLLs>
+      <ForceSymbolReferences>
+      </ForceSymbolReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugLib|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_MBCS;_DEBUG;_CONSOLE;PARADIGM_DEBUG;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir);Extern/Include/pyBulletEngine;C:\Program Files\Autodesk\FBX\FBX SDK\2018.1.1\include;Extern/Include/assimp;Extern/Include/GLFW;Extern/Include/GLEW;Extern/Include/DirectXTK;Extern/Include/DirectX</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>NotSet</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>assimp.lib;dxgi.lib;d3d11.lib;d3dx11.lib;d3dx10.lib;DirectXTK.lib;d3dcompiler.lib;dinput8.lib;dxguid.lib;winmm.lib;pdh.lib;glfw3.lib;opengl32.lib;glew32.lib;glew32s.lib;BulletDynamics.lib;BulletCollision.lib;LinearMath.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>Extern/Lib/x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <PreventDllBinding>
+      </PreventDllBinding>
+      <DelayLoadDLLs>
+      </DelayLoadDLLs>
+      <ForceSymbolReferences>
+      </ForceSymbolReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_x64;_MBCS;_DEBUG;_CONSOLE;WIN32;PARADIGM_DEBUG;_WINDOWS;OPENDDL_NO_USE_CPP11;ASSIMP_BUILD_NO_C4D_IMPORTER;ASSIMP_BUILD_DLL_EXPORT;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;OPENDDLPARSER_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir);Extern/Include/pyBulletEngine;Extern/Include/DirectX;Extern/Include/DirectXTK</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>NotSet</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>Extern/Lib/x64/Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>assimp.lib;dxgi.lib;d3d11.lib;d3dx11d.lib;d3dx10d.lib;DirectXTK.lib;d3dcompiler.lib;dinput8.lib;dxguid.lib;winmm.lib;pdh.lib;BulletDynamics.lib;BulletCollision.lib;LinearMath.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugLib|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_PARADIGM_EDITOR;_x64;_MBCS;_DEBUG;_CONSOLE;WIN32;PARADIGM_DEBUG;_WINDOWS;OPENDDL_NO_USE_CPP11;ASSIMP_BUILD_NO_C4D_IMPORTER;ASSIMP_BUILD_DLL_EXPORT;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;OPENDDLPARSER_BUILD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir);Extern/Include/pyBulletEngine;C:\Program Files\Autodesk\FBX\FBX SDK\2018.1.1\include;Extern/Include/GLFW;Extern/Include/GLEW;Extern/Include/DirectX;Extern/Include/DirectXTK</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>NotSet</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>Extern/Lib/x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>assimp.lib;dxgi.lib;d3d11.lib;d3dx11.lib;d3dx10.lib;DirectXTK.lib;d3dcompiler.lib;dinput8.lib;dxguid.lib;winmm.lib;pdh.lib;glfw3.lib;opengl32.lib;glew32.lib;glew32s.lib;BulletDynamics.lib;BulletCollision.lib;LinearMath.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>assimp.lib;dxgi.lib;d3d11.lib;d3dx11d.lib;d3dx10d.lib;DirectXTK.lib;d3dcompiler.lib;dinput8.lib;dxguid.lib;winmm.lib;pdh.lib;BulletDynamics.lib;BulletCollision.lib;LinearMath.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>Extern/Lib/x64/Debug</AdditionalLibraryDirectories>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_x86;_MBCS;_CONSOLE;WIN32;NDEBUG;PARADIGM_LOG_FILE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir);Extern/Include/pyBulletEngine;C:\Program Files\Autodesk\FBX\FBX SDK\2018.1.1\include;Extern/Include/GLFW;Extern/Include/GLEW;Extern/Include/DirectXTK;Extern/Include/DirectX</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>NotSet</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>Extern/Lib/x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>assimp.lib;dxgi.lib;d3d11.lib;d3dx11.lib;d3dx10.lib;DirectXTK.lib;d3dcompiler.lib;dinput8.lib;dxguid.lib;winmm.lib;pdh.lib;glfw3.lib;opengl32.lib;glew32.lib;glew32s.lib;BulletDynamics.lib;BulletCollision.lib;LinearMath.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseLib|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_MBCS;_CONSOLE;WIN32;NDEBUG;PARADIGM_LOG_FILE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir);Extern/Include/pyBulletEngine;C:\Program Files\Autodesk\FBX\FBX SDK\2018.1.1\include;Extern/Include/GLFW;Extern/Include/GLEW;Extern/Include/DirectXTK;Extern/Include/DirectX</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>NotSet</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>Extern/Lib/x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>assimp.lib;dxgi.lib;d3d11.lib;d3dx11.lib;d3dx10.lib;DirectXTK.lib;d3dcompiler.lib;dinput8.lib;dxguid.lib;winmm.lib;pdh.lib;glfw3.lib;opengl32.lib;glew32.lib;glew32s.lib;BulletDynamics.lib;BulletCollision.lib;LinearMath.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level1</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_x64;_MBCS;_CONSOLE;NDEBUG;WIN32;PARADIGM_LOG_FILE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir);Extern/Include/pyBulletEngine;C:\Program Files\Autodesk\FBX\FBX SDK\2018.1.1\include;Extern/Include/GLFW;Extern/Include/GLEW;Extern/Include/DirectX;Extern/Include/DirectXTK</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>NotSet</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>Extern/Lib/x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>assimp.lib;dxgi.lib;d3d11.lib;d3dx11.lib;d3dx10.lib;DirectXTK.lib;d3dcompiler.lib;dinput8.lib;dxguid.lib;winmm.lib;pdh.lib;glfw3.lib;opengl32.lib;glew32.lib;glew32s.lib;BulletDynamics.lib;BulletCollision.lib;LinearMath.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseLib|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level1</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_PARADIGM_EDITOR;_x64;_MBCS;_CONSOLE;NDEBUG;WIN32;PARADIGM_LOG_FILE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir);Extern/Include/pyBulletEngine;C:\Program Files\Autodesk\FBX\FBX SDK\2018.1.1\include;Extern/Include/GLFW;Extern/Include/GLEW;Extern/Include/DirectX;Extern/Include/DirectXTK</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>NotSet</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>Extern/Lib/x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>assimp.lib;dxgi.lib;d3d11.lib;d3dx11.lib;d3dx10.lib;DirectXTK.lib;d3dcompiler.lib;dinput8.lib;dxguid.lib;winmm.lib;pdh.lib;glfw3.lib;opengl32.lib;glew32.lib;glew32s.lib;BulletDynamics.lib;BulletCollision.lib;LinearMath.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>assimp.lib;dxgi.lib;d3d11.lib;d3dx11.lib;d3dx10.lib;DirectXTK.lib;d3dcompiler.lib;dinput8.lib;dxguid.lib;winmm.lib;pdh.lib;BulletDynamics.lib;BulletCollision.lib;LinearMath.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>Extern/Lib/x64</AdditionalLibraryDirectories>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Source\Core\DataStructure\FString.cpp" />
+    <ClCompile Include="Source\Core\DataStructure\FLayer.cpp" />
+    <ClCompile Include="Source\Core\Debug\FConsoleUtility.cpp" />
+    <ClCompile Include="Source\Core\Debug\ParadigmException.cpp" />
+    <ClCompile Include="Source\Core\FColor.cpp" />
+    <ClCompile Include="Source\Core\Serialization\FArchive.cpp" />
+    <ClCompile Include="Source\Core\Serialization\FArchiveSupervisor.cpp" />
+    <ClCompile Include="Source\EngineFramework\Factory\FFactorySupervisor.cpp" />
+    <ClCompile Include="Source\EngineFramework\Factory\UMetaEntity.cpp" />
+    <ClCompile Include="Source\EngineFramework\MetaGear\FMetaCamera.cpp" />
+    <ClCompile Include="Source\EngineFramework\MetaGear\UMetaMaterialViewver.cpp" />
+    <ClCompile Include="Source\EngineFramework\MetaGear\UMetaMeshRender.cpp" />
+    <ClCompile Include="Source\EngineFramework\MetaGear\UMetaMeshShape.cpp" />
+    <ClCompile Include="Source\EngineFramework\Processor\FCameraProcessor.cpp" />
+    <ClCompile Include="Source\EngineFramework\Processor\FMaterialViewverProcessor.cpp" />
+    <ClCompile Include="Include\EngineFramework\Processor\FCustomBehaviourProcessor.inl" />
+    <ClCompile Include="Source\EngineFramework\Processor\FRigidbodyProcessor.cpp" />
+    <ClCompile Include="Source\GameFramework\GameGear\LowRenderer\GCamera.cpp" />
+    <ClCompile Include="Source\EngineFramework\MetaGear\FMetaMeshShape.cpp" />
+    <ClCompile Include="Source\GameFramework\GameGear\GGear.cpp" />
+    <ClCompile Include="Source\GameFramework\GameEntity\GEntity.cpp" />
+    <ClCompile Include="Source\Core\Serialization\FTransfer.cpp" />
+    <ClCompile Include="Source\GameFramework\GameGear\LowRenderer\GMeshRender.cpp" />
+    <ClCompile Include="Source\GameFramework\GameGear\Physics\GRigidbody.cpp" />
+    <ClCompile Include="Source\GameFramework\GameGear\Physics\GTransform.cpp" />
+    <ClCompile Include="Source\GameFramework\GameGear\Physics\UCollision.cpp" />
+    <ClCompile Include="Source\GameFramework\GameGear\LowRenderer\GMeshShape.cpp" />
+    <ClCompile Include="Source\NativeInterface\Context\FWindowsInterface.cpp" />
+    <ClCompile Include="Source\NativeInterface\Graphics\FD3D11Interface.cpp" />
+    <ClCompile Include="Source\NativeInterface\Graphics\Shader\FD3D11ShaderInterface.cpp" />
+    <ClCompile Include="Source\EngineFramework\Factory\FMetaEntity.cpp" />
+    <ClCompile Include="Source\NativeInterface\Input\FDirectInputInterface.cpp" />
+    <ClCompile Include="Source\NativeInterface\Physics\BulletMotionState.cpp" />
+    <ClCompile Include="Source\NativeInterface\Loader\Mesh\FAssimpInterface.cpp" />
+    <ClCompile Include="Source\NativeInterface\Physics\FBulletInterface.cpp" />
+    <ClCompile Include="Source\FParadigmEngine.cpp" />
+    <ClCompile Include="Source\EngineFramework\NativeProcessor\FProcessorSupervisor.cpp" />
+    <ClCompile Include="Source\NativeInterface\Physics\FPhysicsInterface.cpp" />
+    <ClCompile Include="Source\Physics\Collision\UCollider.cpp" />
+    <ClCompile Include="Source\Physics\Force\FRigidbody.cpp" />
+    <ClCompile Include="Source\Physics\Force\URigidbody.cpp" />
+    <ClCompile Include="Source\Physics\FTransform.cpp" />
+    <ClCompile Include="Source\Core\Debug\FPrint.cpp" />
+    <ClCompile Include="Source\Core\Debug\SUnitTest.cpp" />
+    <ClCompile Include="Source\Core\File\FJson.cpp" />
+    <ClCompile Include="Source\Core\File\FNode.cpp" />
+    <ClCompile Include="Source\Core\Math\FMatrix4.cpp" />
+    <ClCompile Include="Source\Core\Math\FQuaternion.cpp" />
+    <ClCompile Include="Source\Core\Math\FVector2.cpp" />
+    <ClCompile Include="Source\Core\Math\FVector3.cpp" />
+    <ClCompile Include="Source\Core\Math\FVector4.cpp" />
+    <ClCompile Include="Source\Core\Multiprograming\FThread.cpp" />
+    <ClCompile Include="Source\Core\Time\FTime.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='DebugLib|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='ReleaseLib|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Source\Physics\UTransform.cpp" />
+    <ClCompile Include="Source\Resource\FMaterial.cpp" />
+    <ClCompile Include="Source\Resource\FMetaMaterial.cpp" />
+    <ClCompile Include="Source\Resource\FModel.cpp" />
+    <ClCompile Include="Source\Resource\FResourceSupervisor.cpp" />
+    <ClCompile Include="Source\Resource\FShader.cpp" />
+    <ClCompile Include="Source\Resource\FTexture.cpp" />
+    <ClCompile Include="Source\Resource\UModel.cpp" />
+    <ClCompile Include="Source\Resource\UShader.cpp" />
+    <ClCompile Include="Source\Resource\UShardShader.cpp" />
+    <ClCompile Include="Source\Resource\UTexture.cpp" />
+    <ClCompile Include="Source\Scene\FSceneSupervisor.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\Core\DataStructure\FString.h" />
+    <ClInclude Include="Include\Core\DataStructure\IKeyTable.h" />
+    <ClInclude Include="Include\Core\DataStructure\ParadigmTypedef.h" />
+    <ClInclude Include="Include\Core\DataStructure\TArray.h" />
+    <ClInclude Include="Include\Core\DataStructure\TKeyTable.h" />
+    <ClInclude Include="Include\Core\DataStructure\TStaticKeyTable.h" />
+    <ClInclude Include="Include\Core\Debug\FConsoleUtility.h" />
+    <ClInclude Include="Include\Core\Debug\ParadigmDebugEnum.h" />
+    <ClInclude Include="Include\Core\Debug\ParadigmException.h" />
+    <ClInclude Include="Include\Core\Serialization\FArchiveSupervisor.h" />
+    <ClInclude Include="Include\Core\Serialization\ParadigmSerialization.h" />
+    <ClInclude Include="Include\Core\Serialization\UArchive.h" />
+    <ClInclude Include="Include\EngineFramework\MetaGear\LowRenderer\UMetaMaterialViewver.h" />
+    <ClInclude Include="Include\EngineFramework\MetaGear\ParadigmMetaGear.h" />
+    <ClInclude Include="Include\EngineFramework\Processor\FMaterialViewverProcessor.h" />
+    <ClInclude Include="Include\GameFramework\GameGear\LowRenderer\GMaterialViewver.h" />
+    <ClInclude Include="Include\NativeInterface\NativeInterfaceEnums.h" />
+    <ClInclude Include="Include\EngineFramework\Processor\FCustomBehaviourProcessor.h" />
+    <ClInclude Include="Include\GameFramework\GameGear\GCustomBehaviourGear.h" />
+    <ClInclude Include="Include\GameFramework\GameGear\Physics\UCollision.h" />
+    <ClInclude Include="Include\EngineFramework\MetaGear\UCustomBehaviourGear.h" />
+    <ClInclude Include="Include\ParadigmCore.h" />
+    <ClInclude Include="Include\ParadigmKeyword.h" />
+    <ClInclude Include="Include\Core\Dispach\FEvent.h" />
+    <ClInclude Include="Include\Core\DataStructure\FLayer.h" />
+    <ClInclude Include="Include\Core\Math\UMatrix4.h" />
+    <ClInclude Include="Include\Core\Math\UQuaternion.h" />
+    <ClInclude Include="Include\Core\Math\UVector2.h" />
+    <ClInclude Include="Include\Core\Math\UVector3.h" />
+    <ClInclude Include="Include\Core\Math\UVector4.h" />
+    <ClInclude Include="Include\Core\RAII\FFileHandle.h" />
+    <ClInclude Include="Include\Core\Serialization\FArchive.h" />
+    <ClInclude Include="Include\Core\Utility\FColor.h" />
+    <ClInclude Include="Include\Core\Serialization\FEnumerator.h" />
+    <ClInclude Include="Include\Core\Utility\Property.h" />
+    <ClInclude Include="Include\EngineFramework\Factory\FFactorySupervisor.h" />
+    <ClInclude Include="Include\EngineFramework\Factory\FMetaEntity.h" />
+    <ClInclude Include="Include\EngineFramework\MetaGear\LowRenderer\FMetaMeshShape.h" />
+    <ClInclude Include="Include\EngineFramework\MetaGear\LowRenderer\UMetaMeshShape.h" />
+    <ClInclude Include="Include\EngineFramework\MetaGear\UMetaGear.h" />
+    <ClInclude Include="Include\EngineFramework\Factory\UMetaEntity.h" />
+    <ClInclude Include="Include\Core\Serialization\FTransfer.h" />
+    <ClInclude Include="Include\EngineFramework\IPipelineHandle.h" />
+    <ClInclude Include="Include\EngineFramework\MetaGear\LowRenderer\FMetaCamera.h" />
+    <ClInclude Include="Include\EngineFramework\MetaGear\LowRenderer\UMetaCamera.h" />
+    <ClInclude Include="Include\EngineFramework\MetaGear\LowRenderer\UMetaMeshRender.h" />
+    <ClInclude Include="Include\EngineFramework\NativeProcessor\FProcessorSupervisor.h" />
+    <ClInclude Include="Include\EngineFramework\NativeProcessor\IDataProcessor.h" />
+    <ClInclude Include="Include\EngineFramework\NativeProcessor\TArrayDataProcessor.h" />
+    <ClInclude Include="Include\EngineFramework\NativeProcessor\TDataProcessor.h" />
+    <ClInclude Include="Include\EngineFramework\NativeProcessor\TKeyTableDataProcessor.h" />
+    <ClInclude Include="Include\EngineFramework\NativeProcessor\TStaticKeyTableDataProcessor.h" />
+    <ClInclude Include="Include\EngineFramework\NativeProcessor\UProcessor.h" />
+    <ClInclude Include="Include\EngineFramework\Processor\FCameraProcessor.h" />
+    <ClInclude Include="Include\EngineFramework\Processor\FRigidbodyProcessor.h" />
+    <ClInclude Include="Include\EngineFramework\Processor\TGearProcessor.h" />
+    <ClInclude Include="Include\GameFramework\GameGear\LowRenderer\GCamera.h" />
+    <ClInclude Include="Include\GameFramework\GameGear\LowRenderer\GMeshRender.h" />
+    <ClInclude Include="Include\GameFramework\GameGear\GGear.h" />
+    <ClInclude Include="Include\GameFramework\GameGear\LowRenderer\GMeshShape.h" />
+    <ClInclude Include="Include\GameFramework\GameGear\Physics\GCollider.h" />
+    <ClInclude Include="Include\GameFramework\GameGear\Physics\GRigidbody.h" />
+    <ClInclude Include="Include\GameFramework\GameGear\Physics\GTransform.h" />
+    <ClInclude Include="Include\GameFramework\GameEntity\GEntity.h" />
+    <ClInclude Include="Include\NativeInterface\Context\FContextInterface.h" />
+    <ClInclude Include="Include\NativeInterface\Context\NativeContextAttributes.h" />
+    <ClInclude Include="Include\NativeInterface\Context\NativeContextEnums.h" />
+    <ClInclude Include="Include\NativeInterface\Graphics\FGraphicsInterface.h" />
+    <ClInclude Include="Include\NativeInterface\Graphics\NativeFormat.h" />
+    <ClInclude Include="Include\NativeInterface\Graphics\NativeGraphicsEnums.h" />
+    <ClInclude Include="Include\NativeInterface\Graphics\NativeGraphicsEnums_D3D11.h" />
+    <ClInclude Include="Include\NativeInterface\Graphics\NativeGraphicsHandles.h" />
+    <ClInclude Include="Include\NativeInterface\Input\FDirectInputInterface.h" />
+    <ClInclude Include="Include\NativeInterface\Input\FInputInterface.h" />
+    <ClInclude Include="Include\NativeInterface\Input\IDynamicInputInterface.h" />
+    <ClInclude Include="Include\NativeInterface\Input\NativeInputAttributes.h" />
+    <ClInclude Include="Include\NativeInterface\Input\NativeInputAttributes_DirectInput.h" />
+    <ClInclude Include="Include\NativeInterface\Input\NativeInputEnums.h" />
+    <ClInclude Include="Include\NativeInterface\Input\NativeInputEnums_DirectInput.h" />
+    <ClInclude Include="Include\NativeInterface\Input\UDirectInputInterface.h" />
+    <ClInclude Include="Include\NativeInterface\Physics\BulletMotionState.h" />
+    <ClInclude Include="Include\NativeInterface\Graphics\UNativeVertex.h" />
+    <ClInclude Include="Include\NativeInterface\Loader\Mesh\FAssimpInterface.h" />
+    <ClInclude Include="Include\NativeInterface\Loader\Mesh\IDynamicMeshLoaderInterface.h" />
+    <ClInclude Include="Include\NativeInterface\Loader\Mesh\FMeshLoaderInterface.h" />
+    <ClInclude Include="Include\NativeInterface\Physics\FBulletInterface.h" />
+    <ClInclude Include="Include\NativeInterface\Physics\IDynamicPhysicsInterface.h" />
+    <ClInclude Include="Include\NativeInterface\Graphics\FD3D11Interface.h" />
+    <ClInclude Include="Include\NativeInterface\Graphics\IDynamicGraphicsInterface.h" />
+    <ClInclude Include="Include\NativeInterface\Graphics\NativeGraphicsAttributes.h" />
+    <ClInclude Include="Include\NativeInterface\Graphics\Shader\FD3D11ShaderInterface.h" />
+    <ClInclude Include="Include\NativeInterface\Graphics\Shader\ShaderInterfaceAttributes.h" />
+    <ClInclude Include="Include\NativeInterface\Context\IDynamicContextInterface.h" />
+    <ClInclude Include="Include\NativeInterface\Context\FWindowsInterface.h" />
+    <ClInclude Include="Include\NativeInterface\Physics\FPhysicsInterface.h" />
+    <ClInclude Include="Include\Physics\Collider.h" />
+    <ClInclude Include="Include\Physics\Collision\UBoxCollider.h" />
+    <ClInclude Include="Include\Physics\Collision\UCapsuleCollider.h" />
+    <ClInclude Include="Include\Physics\Collision\UColliderShape.h" />
+    <ClInclude Include="Include\Physics\Collision\UCollision.h" />
+    <ClInclude Include="Include\Physics\Collision\UCompoundCollider.h" />
+    <ClInclude Include="Include\Physics\Collision\UConeCollider.h" />
+    <ClInclude Include="Include\Physics\Collision\UCylindreCollider.h" />
+    <ClInclude Include="Include\Physics\Collision\UMeshCollider.h" />
+    <ClInclude Include="Include\Physics\Collision\URayCastHit.h" />
+    <ClInclude Include="Include\Physics\Collision\USphereCollider.h" />
+    <ClInclude Include="Include\Physics\Collision\UCollider.h" />
+    <ClInclude Include="Include\Physics\Force\FRigidbody.h" />
+    <ClInclude Include="Include\Physics\Force\URigidbody.h" />
+    <ClInclude Include="Include\Physics\UTransform.h" />
+    <ClInclude Include="Include\Resource\FMaterial.h" />
+    <ClInclude Include="Include\Resource\FMetaMaterial.h" />
+    <ClInclude Include="Include\Resource\FShader.h" />
+    <ClInclude Include="Include\Resource\UModel.h" />
+    <ClInclude Include="Include\Resource\UShader.h" />
+    <ClInclude Include="Include\Resource\UShardShader.h" />
+    <ClInclude Include="Include\Resource\FTexture.h" />
+    <ClInclude Include="Include\Resource\FResourceSupervisor.h" />
+    <ClInclude Include="Include\Resource\UAsset.h" />
+    <ClInclude Include="Include\Resource\FModel.h" />
+    <ClInclude Include="Include\Resource\UResource.h" />
+    <ClInclude Include="Include\Resource\UTexture.h" />
+    <ClInclude Include="Include\Scene\FSceneSupervisor.h" />
+    <ClInclude Include="Include\Shortcut\ParadigmDebug.h" />
+    <ClInclude Include="Include\Shortcut\ParadigmMath.h" />
+    <ClInclude Include="Include\Core\DataStructure\FVariableTree.h" />
+    <ClInclude Include="Include\Core\Debug\FPrint.h" />
+    <ClInclude Include="Include\Core\Debug\SUnitTest.h" />
+    <ClInclude Include="Include\Core\Dispach\UJob.h" />
+    <ClInclude Include="Include\Core\Dispach\FMultiCast.h" />
+    <ClInclude Include="Include\Core\File\FJson.h" />
+    <ClInclude Include="Include\Core\File\FNode.h" />
+    <ClInclude Include="Include\Core\Logic\UTypeInfo.h" />
+    <ClInclude Include="Include\Core\Math\FMatrix4.h" />
+    <ClInclude Include="Include\Core\Math\FQuaternion.h" />
+    <ClInclude Include="Include\Core\Math\FVector2.h" />
+    <ClInclude Include="Include\Core\Math\FVector3.h" />
+    <ClInclude Include="Include\Core\Math\FVector4.h" />
+    <ClInclude Include="Include\Core\Multiprograming\FThread.h" />
+    <ClInclude Include="Include\Core\Multiprograming\UThread.h" />
+    <ClInclude Include="Include\Physics\FTransform.h" />
+    <ClInclude Include="Include\Core\Time\FTime.h" />
+    <ClInclude Include="Include\FParadigmEngine.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Include\Core\DataStructure\FLayer.inl" />
+    <None Include="Include\Core\DataStructure\IKeyTable.inl" />
+    <None Include="Include\Core\Dispach\FEvent.inl" />
+    <None Include="Include\Core\Serialization\FArchiveSupervisor.inl" />
+    <None Include="Include\EngineFramework\Factory\FFactorySupervisor.inl" />
+    <None Include="Include\EngineFramework\Factory\FMetaEntity.inl" />
+    <None Include="Include\Core\Serialization\FTransfer.inl" />
+    <None Include="Include\EngineFramework\Factory\UMetaEntity.inl" />
+    <None Include="Include\EngineFramework\NativeProcessor\TArrayDataProcessor.inl" />
+    <None Include="Include\EngineFramework\NativeProcessor\TDataProcessor.inl" />
+    <None Include="Include\EngineFramework\NativeProcessor\TKeyTableDataProcessor.inl" />
+    <None Include="Include\Core\DataStructure\FString.inl" />
+    <None Include="Include\Core\DataStructure\TArray.inl" />
+    <None Include="Include\Core\DataStructure\TKeyTable.inl" />
+    <None Include="Include\Core\DataStructure\TStaticKeyTable.inl" />
+    <None Include="Include\EngineFramework\NativeProcessor\TStaticKeyTableDataProcessor.inl" />
+    <None Include="Include\NativeInterface\Graphics\FD3D11Interface.inl" />
+    <None Include="Include\Physics\Collision\UCollider.inl" />
+    <None Include="Include\Resource\FMetaMaterial.inl" />
+    <None Include="Include\GameFramework\GameGear\GGear.inl" />
+    <None Include="Include\GameFramework\GameEntity\GEntity.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ParadigmEngine.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\..\pictures\devscreen\paradigmengine\slides\icon2.ico" />
+    <Image Include="..\..\..\..\..\Pictures\DevScreen\ParadigmEngine\Slides\ParadigmIcon.ico" />
+    <Image Include="..\..\..\..\..\Pictures\DevScreen\ParadigmEngine\Slides\ParadigmKey.ico" />
+    <Image Include="Resource\ParadigmIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Include\Core\Serialization\FArchive.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <Target Name="HelloWorld">
+    <Message Text="Configuration is $(Configuration)" />
+    <Message Text="MSBuildToolsPath is $(MSBuildToolsPath)" />
+  </Target>
+</Project>
